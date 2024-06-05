@@ -1,0 +1,14 @@
+.custom-table{
+    box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+    border-radius: 6px;
+}
+
+.custom-container{
+    border-radius: 10px;
+}
+.custom-form{
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+    border-radius: 6px;
+}

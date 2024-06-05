@@ -4,6 +4,7 @@ import './App.css'
 import Header from './components/Header'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
+import HomeView from './components/HomeView.jsx'
 import ListaVehiculos from './components/ListaVehiculos.jsx'
 import CrearVehiculo from './components/CrearVehiculo.jsx'
 import CrearVehiculoRefactor from './components/CrearVehiculoRefactor.jsx'
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Header/>            
         <Routes> 
+          <Route path="/" element={<HomeView/>}/>
           <Route path="/vehiculos" element={<ListaVehiculos/>}/>
           <Route path="/vehiculos/ingresar" element={<CrearVehiculoRefactor/>}/>
           <Route path="/vehiculos/:idVehiculo" element={<VehiculoView/>}/>

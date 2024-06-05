@@ -45,5 +45,8 @@ function deleteIngreso(idIngreso) {
 function getIngresoById(idIngreso){
   return axios.get(`${INGRESOS_API_URL}${idIngreso}`);
 }
+
+
+
 export default {getVehiculos,crearVehiculo,
   deleteVehiculo,crearIngreso,getVehiculoById,getIngresos,getIngresosByIdVehiculo,deleteIngreso,getIngresoById}

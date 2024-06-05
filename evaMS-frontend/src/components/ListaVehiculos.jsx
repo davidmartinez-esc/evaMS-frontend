@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import gestionService from "../services/gestion.service.js";
 import { Link } from "react-router-dom";
-import '../css/ListaVehiculos.css'
+import '../css/CustomElements.css'
 
 export default function ListaVehiculos() {
   const [vehiculos, setVehiculos] = useState([]);
@@ -34,10 +34,10 @@ export default function ListaVehiculos() {
   }, [])
 
   return (
-    <div className="container">
+    <div className="container custom-container border">
       <h1>Lista de Vehiculos</h1>
   
-      <table className="table">
+      <table className="table custom-table">
         <thead>
           <tr>
             <th scope="col">ID</th>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import gestionService from "../services/gestion.service.js";
+import "../css/CustomForm.css"
 
 export default function CrearVehiculoRefactor() {
   const [vehiculo, setVehiculo] = useState({
@@ -44,9 +45,10 @@ export default function CrearVehiculoRefactor() {
   }
 
   return (
-    <div className="container">
+    <div className="container  ">
+      <form className="border row g-3 px-4 custom-form">
       <h1 className="mb-4">Ingresar Vehiculo</h1>
-      <form className="border row g-3 px-4">
+      <hr />
         <div className="col-12">
           <label 
             htmlFor="patente" 

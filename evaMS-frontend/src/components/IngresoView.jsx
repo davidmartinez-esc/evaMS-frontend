@@ -38,7 +38,7 @@ export default function IngresoView() {
             console.log(response.data); 
                             
         }catch(error) {
-            alert("Error al obtener el vehiculo");
+            alert("Error al obtener el las reparaciones aplicadas al ingreso");
         }
     }
 
@@ -90,7 +90,8 @@ export default function IngresoView() {
           })
     
           alert("Enviada la request con exito");
-        }catch(error) {      
+        }catch(error) {
+            console.log(nuevaRepAplicadaRequest);      
           alert("Error al enviar la request.");
         }
       }
@@ -207,7 +208,7 @@ export default function IngresoView() {
                                         tiposDeReparacion.map((tipoDeRep, index) => (
                                         <option 
                                             key={index} 
-                                            value={tipoDeRep.id}
+                                            value={tipoDeRep.nombreDeLaRep}
                                         >
                                             {tipoDeRep.nombreDeLaRep}
                                         </option>

@@ -1,0 +1,27 @@
+.navbar-custom{
+    background-color: #363cbd;
+}
+
+nav .navbar-nav li a{
+    display: flex !important;
+	align-items: center !important;
+    color: rgba(255, 255, 255, 0.87) !important;
+    width: 200px;
+    margin-right: -40px;
+    }
+
+.nav-bar-image{
+    max-width: 23%;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+}
+
+.imagen-reparacion{
+    max-width: 18%;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+}
+
+
