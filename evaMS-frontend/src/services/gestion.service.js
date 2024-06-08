@@ -46,7 +46,21 @@ function getIngresoById(idIngreso){
   return axios.get(`${INGRESOS_API_URL}${idIngreso}`);
 }
 
+function asignarNuevaRepEspecificaEnIngreso(nuevaRepRequest) {
+  return axios.post(`${INGRESOS_API_URL}asignarNuevaReparacion`, nuevaRepRequest);  
+}
 
+function calcularCostosFinales(ingreso) {
+  return axios.put(`${INGRESOS_API_URL}pasoPorCaja`, ingreso);  
+}
 
+function getNumeroDeVehiculosTotales() {
+  return axios.get(`${VEHICULOS_GET_API_URL}getTotalVehiculosRegistrados`);  
+}
+
+function getNumeroDeIngresosTotales() {
+  return axios.get(`${INGRESOS_API_URL}getTotalDeIngresosARep`);  
+}
 export default {getVehiculos,crearVehiculo,
-  deleteVehiculo,crearIngreso,getVehiculoById,getIngresos,getIngresosByIdVehiculo,deleteIngreso,getIngresoById}
+  deleteVehiculo,crearIngreso,getVehiculoById,getIngresos,getIngresosByIdVehiculo,deleteIngreso,getIngresoById,asignarNuevaRepEspecificaEnIngreso,
+calcularCostosFinales,getNumeroDeVehiculosTotales,getNumeroDeIngresosTotales}

@@ -5,3 +5,7 @@ h1{
 #botonCrearTipoReparacion{
     margin-bottom:10px;
 }
+
+#formCrearTipoReparacion{
+    margin: auto;
+}

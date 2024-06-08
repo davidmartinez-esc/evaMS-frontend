@@ -14,15 +14,15 @@ export default function Header () {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul className="navbar-nav border">
+          <ul className="navbar-nav ">
             {/* <Link className="mr-3 mr-3" to="/estudiantes">Listado Estudiantes</Link> */}
-            <li className="nav-item border">
+            <li className="nav-item ">
             <Link className="nav-link" to="/vehiculos"><img className="nav-bar-image "src={logoLista} alt="Imagen de una lista" /> Lista Vehiculos </Link>
                 </li>
-            <li className="nav-item border">
-            <Link className="nav-link " to="/vehiculos/ingresar"><img className="nav-bar-image "src={iconoCrearAutomovil} alt="Imagen de un automovil con un +" /> Crear Automovil</Link>
+            <li className="nav-item ">
+            <Link className="nav-link " to="/vehiculos/ingresar"><img className="nav-bar-image "src={iconoCrearAutomovil} alt="Imagen de un automovil con un +" /> Agregar Vehiculo</Link>
             </li>
-            <li className="nav-item border">
+            <li className="nav-item ">
             <Link className="nav-link" to="/tiposDeReparacion"><img className="nav-bar-image "src={iconoReparacion} alt="Imagen de una llave inglesa y un destornillador cruzados en X" /> Tipos De Reparacion</Link>
             </li>
             

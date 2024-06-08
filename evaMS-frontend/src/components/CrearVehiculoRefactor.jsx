@@ -45,10 +45,10 @@ export default function CrearVehiculoRefactor() {
   }
 
   return (
-    <div className="container  ">
-      <form className="border row g-3 px-4 custom-form">
-      <h1 className="mb-4">Ingresar Vehiculo</h1>
-      <hr />
+    <div className="container">
+        <form className="border row g-3 px-4 custom-form">
+        <h1 className="mb-4">Ingresar Vehiculo</h1>
+        <hr />
         <div className="col-12">
           <label 
             htmlFor="patente" 

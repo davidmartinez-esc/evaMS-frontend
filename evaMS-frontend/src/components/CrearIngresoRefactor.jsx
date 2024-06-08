@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import gestionService from "../services/gestion.service.js";
+import '../css/CustomForm.css'
 
 export default function CrearIngresoRefactor() {
   
@@ -13,6 +14,7 @@ export default function CrearIngresoRefactor() {
   const [horaSalida, setHoraSalida] = useState("");
   const [fechaRecogida, setFechaRecogida] = useState("");
   const [horaRecogida, setHoraRecogida] = useState("");
+  const [kilometrajeAlIngreso,setKilometrajeAlIngreso] = useState(0);
 
 
  
@@ -27,7 +29,8 @@ export default function CrearIngresoRefactor() {
         fechaSalida,
         horaSalida,
         fechaRecogida,
-        horaRecogida
+        horaRecogida,
+        kilometrajeAlIngreso
       })
 
      
@@ -38,6 +41,7 @@ export default function CrearIngresoRefactor() {
       setHoraSalida("");
       setFechaRecogida("");
       setHoraRecogida("");
+      setKilometrajeAlIngreso(0);
 
       alert("Ingreso creado con exito");
     }catch(error) {
@@ -53,8 +57,10 @@ export default function CrearIngresoRefactor() {
 
   return (
     <div className="container">
-      <h1 className="mb-4">Crear Ingreso</h1>
-      <form className="border row g-3 px-4">
+      <h1 className="mb-4">Crear Ingreso A Taller</h1>
+      
+      <form className="border row g-3 px-4 custom-form">
+      
 
         <div className="col-md-6">
           <label htmlFor="fechaIngreso" className="form-label">Fecha Ingreso</label>
@@ -94,6 +100,12 @@ export default function CrearIngresoRefactor() {
         <div className="col-md-6">
           <label htmlFor="horaRecogida" className="form-label">Hora Recogida</label>
           <input id="horaRecogida" type="text" placeholder="HH:mm" className="form-control" value={horaRecogida} onChange={e => setHoraRecogida(e.target.value)} />
+        
+        </div>
+
+        <div className="col-md-6">
+          <label htmlFor="kilometrajeAlIngreso" className="form-label">Kilometraje</label>
+          <input id="kilometrajeAlIngreso" type="text" placeholder="0" className="form-control" value={kilometrajeAlIngreso} onChange={e => setKilometrajeAlIngreso(e.target.value)} />
         
         </div>
 

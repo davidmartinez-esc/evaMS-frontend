@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import tipoDeRepService from "../services/preciosPorRepService.js";
 import '../css/ListaReparaciones.css'
+import '../css/CustomForm.css'
 
 export default function CrearTipoDeReparacion() {
   const [tipoReparacion, setTipoReparacion] = useState({
@@ -43,8 +44,10 @@ export default function CrearTipoDeReparacion() {
 
   return (
     <div className="container">
+      
+      <form className="border row g-3 px-4 custom-form" id="formCrearTipoReparacion">
       <h1 className="mb-4">Crear Tipo de Reparacion</h1>
-      <form className="border row g-3 px-4">
+      <hr />
         <div className="col-12">
           <label 
             htmlFor="nombreDeLaRep" 
@@ -80,7 +83,7 @@ export default function CrearTipoDeReparacion() {
 
         
 
-        <div className="col-12">
+        <div className="col-md-6">
           <label 
             htmlFor="precioDiesel" 
             className="form-label"

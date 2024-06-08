@@ -12,3 +12,17 @@
     box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
     border-radius: 6px;
 }
+
+#custom-datos-vehiculo{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+#custom-ingresos-vehiculo{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}

@@ -3,7 +3,7 @@ import gestionService from "../services/gestion.service.js";
 import { Link } from "react-router-dom";
 import '../css/ListaReparaciones.css'
 import preciosPorRepService from "../services/preciosPorRepService.js";
-
+import '../css/CustomElements.css'
 export default function ListaTiposReparacion() {
   const [reparaciones, setReparaciones] = useState([]);
 
@@ -37,10 +37,11 @@ export default function ListaTiposReparacion() {
   }, [])
 
   return (
-    <div className="container">
+    <div className="container custom-container border">
       <h1>Lista de Tipos de Reparacion</h1>
+      <hr />
   
-      <table className="table">
+      <table className="table custom-table">
         <thead>
           <tr>
             <th scope="col">NOMBRE DE LA REPARACION</th>

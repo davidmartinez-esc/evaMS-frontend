@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import gestionService from "../services/gestion.service";
+import '../css/CustomElements.css';
 
 export default function VehiculoView() {
+    
+
     const {idVehiculo} = useParams();
 
     const [ingresos, setIngresos] = useState([]);
@@ -53,41 +56,43 @@ export default function VehiculoView() {
     return(
         <div>
 
-            <h2 className="text-center">Datos del Vehiculo</h2>
-           
-            <div>
+            <div className="container">
                 {vehiculo ? (
-                    <div>
-                     <table className="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">PATENTE</th>
-                                    <th scope="col">MARCA</th>
-                                    <th scope="col">MODELO</th>
-                                    <th scope="col">TIPO</th>
-                                    <th scope="col">TIPO DE MOTOR</th>
-                                    <th scope="col">NUMERO DE ASIENTOS</th>
-                                    <th scope="col">AÑO DE FABRICACION</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>{vehiculo.id}</td>
-                                <td>{vehiculo.patente}</td>
-                                <td>{vehiculo.marca}</td>
-                                <td>{vehiculo.modelo}</td>
-                                <td>{vehiculo.tipo}</td>
-                                <td>{vehiculo.tipoMotor}</td>
-                                <td>{vehiculo.numeroDeAsientos}</td>
-                                <td>{vehiculo.anio_Fabricacion}</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <div className="container">
-                                    <h2 className="text-center">Ingresos Del Vehiculo</h2>
-                                
-                                    <table className="table">
+                    <div className="row border">
+                        <div className="col-sm border">
+                        <h2 className="text-center">Datos del Vehiculo</h2>
+                        <hr />
+                            <table className="table custom-table" id="custom-datos-vehiculo">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">PATENTE</th>
+                                            <th scope="col">MARCA</th>
+                                            <th scope="col">MODELO</th>
+                                            <th scope="col">TIPO</th>
+                                            <th scope="col">TIPO DE MOTOR</th>
+                                            <th scope="col">NUMERO DE ASIENTOS</th>
+                                            <th scope="col">AÑO DE FABRICACION</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>{vehiculo.id}</td>
+                                        <td>{vehiculo.patente}</td>
+                                        <td>{vehiculo.marca}</td>
+                                        <td>{vehiculo.modelo}</td>
+                                        <td>{vehiculo.tipo}</td>
+                                        <td>{vehiculo.tipoMotor}</td>
+                                        <td>{vehiculo.numeroDeAsientos}</td>
+                                        <td>{vehiculo.anio_Fabricacion}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                        <div className="container col border">
+                                    <h2 className="text-center">Ingresos a taller del vehiculo</h2>
+                                    <hr />
+                                    <table className="table custom-table" id="custom-ingresos-vehiculo">
                                         <thead>
                                         <tr>
                                             <th scope="col">ID VEHICULO</th>
