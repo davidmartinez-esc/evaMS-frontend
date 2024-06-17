@@ -24,4 +24,7 @@ nav .navbar-nav li a{
     margin-left: -10px;
 }
 
-
+.dropdown-toggle:active, .dropdown-toggle {
+ 
+    color:#ffffff !important;
+}

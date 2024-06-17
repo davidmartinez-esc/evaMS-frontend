@@ -13,6 +13,7 @@ import VehiculoView from './components/VehiculoView.jsx'
 import IngresoView from './components/IngresoView.jsx'
 import ListaTiposReparacion from './components/ListaTiposReparacion.jsx'
 import CrearTipoDeReparacion from './components/CrearTipoDeReparacion.jsx'
+import ListaReportesDatosIngresos from './components/ListaReportesDatosIngresos.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +28,8 @@ function App() {
           <Route path="/vehiculos/:idVehiculo" element={<VehiculoView/>}/>
           <Route path="/ingresos/crear/:idVehiculo" element={<CrearIngresoRefactor/>}/>
           <Route path="/ingresos/:idIngreso" element={<IngresoView/>}/>
+          <Route path="/ingresos/reportesIngresos" element={<ListaReportesDatosIngresos/>}/>
+          
           <Route path="/tiposDeReparacion" element={<ListaTiposReparacion/>}/>  
           <Route path="/tiposDeReparacion/ingresar" element={<CrearTipoDeReparacion/>}/>          
         </Routes>

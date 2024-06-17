@@ -16,15 +16,30 @@ export default function Header () {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul className="navbar-nav ">
             {/* <Link className="mr-3 mr-3" to="/estudiantes">Listado Estudiantes</Link> */}
-            <li className="nav-item ">
-            <Link className="nav-link" to="/vehiculos"><img className="nav-bar-image "src={logoLista} alt="Imagen de una lista" /> Lista Vehiculos </Link>
-                </li>
+
+              
+                <div className="btn-group">
+                    <button  className="btn dropdown-toggle " data-bs-toggle='dropdown' aria-haspopup="true" aria-expanded="false">
+                      Listas
+                    </button>
+                    <div className="dropdown-menu">
+ 
+                      <a className="dropdown-item" href="/vehiculos">Lista Vehiculos</a>
+                      <a className="dropdown-item" href="/ingresos/reportesIngresos">Lista con todos los datos</a>
+                    </div>
+                  </div>
+                
+            
             <li className="nav-item ">
             <Link className="nav-link " to="/vehiculos/ingresar"><img className="nav-bar-image "src={iconoCrearAutomovil} alt="Imagen de un automovil con un +" /> Agregar Vehiculo</Link>
             </li>
             <li className="nav-item ">
             <Link className="nav-link" to="/tiposDeReparacion"><img className="nav-bar-image "src={iconoReparacion} alt="Imagen de una llave inglesa y un destornillador cruzados en X" /> Tipos De Reparacion</Link>
             </li>
+            <li className="nav-item ">
+            <Link className="nav-link" to="/ingresos/reportesIngresos"><img className="nav-bar-image "src={logoLista} alt="Imagen de una lista" /> Lista Todos los datos </Link>
+            </li>
+            
             
 
 
