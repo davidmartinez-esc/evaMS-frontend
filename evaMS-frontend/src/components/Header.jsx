@@ -33,13 +33,11 @@ export default function Header () {
             <li className="nav-item ">
             <Link className="nav-link " to="/vehiculos/ingresar"><img className="nav-bar-image "src={iconoCrearAutomovil} alt="Imagen de un automovil con un +" /> Agregar Vehiculo</Link>
             </li>
+           
             <li className="nav-item ">
             <Link className="nav-link" to="/tiposDeReparacion"><img className="nav-bar-image "src={iconoReparacion} alt="Imagen de una llave inglesa y un destornillador cruzados en X" /> Tipos De Reparacion</Link>
             </li>
-            <li className="nav-item ">
-            <Link className="nav-link" to="/ingresos/reportesIngresos"><img className="nav-bar-image "src={logoLista} alt="Imagen de una lista" /> Lista Todos los datos </Link>
-            </li>
-            
+           
             
 
 

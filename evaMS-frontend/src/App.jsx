@@ -14,6 +14,8 @@ import IngresoView from './components/IngresoView.jsx'
 import ListaTiposReparacion from './components/ListaTiposReparacion.jsx'
 import CrearTipoDeReparacion from './components/CrearTipoDeReparacion.jsx'
 import ListaReportesDatosIngresos from './components/ListaReportesDatosIngresos.jsx'
+import PreReporteUltimosTresMeses from './components/PreReporteUltimosTresMeses.jsx'
+import ReporteUltimosTresMeses from './components/ReporteUltimosTresMeses.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,7 +33,10 @@ function App() {
           <Route path="/ingresos/reportesIngresos" element={<ListaReportesDatosIngresos/>}/>
           
           <Route path="/tiposDeReparacion" element={<ListaTiposReparacion/>}/>  
-          <Route path="/tiposDeReparacion/ingresar" element={<CrearTipoDeReparacion/>}/>          
+          <Route path="/tiposDeReparacion/ingresar" element={<CrearTipoDeReparacion/>}/>   
+
+          <Route path="/reportes/reporteUltimosTresMeses" element={<PreReporteUltimosTresMeses/>}/>
+          <Route path="/reportes/reporteUltimosTresMeses/:fechaRequest" element={<ReporteUltimosTresMeses/>}/>       
         </Routes>
       </BrowserRouter>
 
